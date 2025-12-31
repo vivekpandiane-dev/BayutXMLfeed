@@ -1,96 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
 
+  <!-- ===================== -->
+  <!-- PROPERTY FOR SALE -->
+  <!-- ===================== -->
   <Property>
-    <Properties_Name>Luxury Villa Palm Jumeirah</Properties_Name>
-    <Properties_Owner>John Doe</Properties_Owner>
-    <Matched_Opportunities>OPP-1023</Matched_Opportunities>
-    <Created_By>Admin</Created_By>
 
-    <Commercial>Sale</Commercial>
-    <Residential>Yes</Residential>
-    <Title>5BR Luxury Villa with Sea View</Title>
+    <!-- Mandatory Identifiers -->
+    <Property_Ref_No><![CDATA[ NV-SALE-001 ]]></Property_Ref_No>
+    <Permit_Number><![CDATA[ RERA-987654 ]]></Permit_Number>
 
-    <Property_Type>Villa</Property_Type>
-    <Sizesqft>6200</Sizesqft>
-    <Bedrooms>5</Bedrooms>
-    <Bathrooms>6</Bathrooms>
-    <Parking_Spaces>2</Parking_Spaces>
+    <!-- Listing Status -->
+    <Property_purpose><![CDATA[ Buy ]]></Property_purpose>
+    <Property_Status><![CDATA[ live ]]></Property_Status>
 
-    <Furnishing_Type>Fitted</Furnishing_Type>
-    <Total_Plot_Size_Built_Up_Area>7000</Total_Plot_Size_Built_Up_Area>
+    <!-- Property Classification -->
+    <Property_Type><![CDATA[ Villa ]]></Property_Type>
 
-    <Description>
-      Fully upgraded luxury villa located in Palm Jumeirah with private beach access.
-    </Description>
+    <!-- Size -->
+    <Property_Size><![CDATA[ 6200 ]]></Property_Size>
+    <Property_Size_Unit><![CDATA[ SQFT ]]></Property_Size_Unit>
 
-    <Select_Amenities>
-      Private Pool, Gym, Sea View, Beach Access
-    </Select_Amenities>
+    <!-- Rooms -->
+    <Bedrooms><![CDATA[ 5 ]]></Bedrooms>
+    <Bathrooms><![CDATA[ 6 ]]></Bathrooms>
 
-    <Assigned_User_Agent>Sarah Williams</Assigned_User_Agent>
+    <!-- Pricing -->
+    <Price><![CDATA[ 35000000 ]]></Price>
 
-    <Project_StatusApplicable_Only_Sales>Ready Secondary</Project_StatusApplicable_Only_Sales>
-    <Status>Available for Sale</Status>
+    <!-- Location -->
+    <City><![CDATA[ Dubai ]]></City>
+    <Locality><![CDATA[ Palm Jumeirah ]]></Locality>
+    <Sub_Locality><![CDATA[ Palm Jumeirah ]]></Sub_Locality>
+    <Tower_Name><![CDATA[ N/A ]]></Tower_Name>
 
-    <Pricing>35000000</Pricing>
-    <Occupancy_Situation>Vacant</Occupancy_Situation>
+    <!-- Content -->
+    <Property_Title><![CDATA[ Luxury 5BR Villa for Sale in Palm Jumeirah ]]></Property_Title>
+    <Property_Description><![CDATA[
+      Fully upgraded luxury villa with private pool, sea view, and beach access.
+    ]]></Property_Description>
 
-    <Rera_Permit>RERA-987654</Rera_Permit>
+    <!-- Property Details -->
+    <Furnished><![CDATA[ Yes ]]></Furnished>
+    <Off_plan><![CDATA[ No ]]></Off_plan>
 
-    <Images>https://example.com/images/villa1.jpg</Images>
+    <!-- Amenities -->
+    <Features>
+      <Feature><![CDATA[ Private Pool ]]></Feature>
+      <Feature><![CDATA[ Gym ]]></Feature>
+      <Feature><![CDATA[ Sea View ]]></Feature>
+      <Feature><![CDATA[ Beach Access ]]></Feature>
+    </Features>
 
-    <Publishing_Draft>No</Publishing_Draft>
-    <Location>Dubai</Location>
+    <!-- Media -->
+    <Images>
+      <Image><![CDATA[ https://example.com/images/villa1.jpg ]]></Image>
+      <Image><![CDATA[ https://example.com/images/villa2.jpg ]]></Image>
+    </Images>
 
-    <Modified_By>Admin</Modified_By>
-    <Connected_to>CRM</Connected_to>
-    <Layout>1</Layout>
+    <!-- Agent Info -->
+    <Listing_Agent><![CDATA[ Sarah Williams ]]></Listing_Agent>
+    <Listing_Agent_Phone><![CDATA[ +971500000000 ]]></Listing_Agent_Phone>
+    <Listing_Agent_Email><![CDATA[ sarah@example.com ]]></Listing_Agent_Email>
+
+    <!-- Meta -->
+    <Last_Updated><![CDATA[ 2025-12-31 12:00:00 ]]></Last_Updated>
+
+    <!-- Portal Selection -->
+    <Portals>
+      <Portal><![CDATA[ Bayut ]]></Portal>
+    </Portals>
+
   </Property>
 
+  <!-- ===================== -->
+  <!-- PROPERTY FOR RENT -->
+  <!-- ===================== -->
   <Property>
-    <Properties_Name>Business Bay Office Space</Properties_Name>
-    <Properties_Owner>ABC Holdings</Properties_Owner>
-    <Matched_Opportunities>OPP-2045</Matched_Opportunities>
-    <Created_By>System</Created_By>
 
-    <Commercial>Rent</Commercial>
-    <Residential>No</Residential>
-    <Title>Fully Fitted Office in Business Bay</Title>
+    <Property_Ref_No><![CDATA[ NV-RENT-001 ]]></Property_Ref_No>
+    <Permit_Number><![CDATA[ RERA-123456 ]]></Permit_Number>
 
-    <Property_Type>Office Space</Property_Type>
-    <Sizesqft>1800</Sizesqft>
-    <Bedrooms>0</Bedrooms>
-    <Bathrooms>2</Bathrooms>
-    <Parking_Spaces>3</Parking_Spaces>
+    <Property_purpose><![CDATA[ Rent ]]></Property_purpose>
+    <Property_Status><![CDATA[ live ]]></Property_Status>
 
-    <Furnishing_Type>Semi-Fitted</Furnishing_Type>
-    <Total_Plot_Size_Built_Up_Area>1800</Total_Plot_Size_Built_Up_Area>
+    <Property_Type><![CDATA[ Apartment ]]></Property_Type>
 
-    <Description>
-      Grade A office space suitable for corporate setup, close to metro.
-    </Description>
+    <Property_Size><![CDATA[ 1450 ]]></Property_Size>
+    <Property_Size_Unit><![CDATA[ SQFT ]]></Property_Size_Unit>
 
-    <Select_Amenities>
-      Reception, Conference Room, Covered Parking
-    </Select_Amenities>
+    <Bedrooms><![CDATA[ 2 ]]></Bedrooms>
+    <Bathrooms><![CDATA[ 3 ]]></Bathrooms>
 
-    <Assigned_User_Agent>Michael Brown</Assigned_User_Agent>
+    <Price><![CDATA[ 140000 ]]></Price>
+    <Rent_Frequency><![CDATA[ Yearly ]]></Rent_Frequency>
 
-    <Status>Available for Rent</Status>
-    <Pricing>250000</Pricing>
-    <Occupancy_Situation>Vacant</Occupancy_Situation>
+    <City><![CDATA[ Dubai ]]></City>
+    <Locality><![CDATA[ Business Bay ]]></Locality>
+    <Sub_Locality><![CDATA[ Business Bay ]]></Sub_Locality>
+    <Tower_Name><![CDATA[ Executive Towers ]]></Tower_Name>
 
-    <Rera_Permit>RERA-456321</Rera_Permit>
+    <Property_Title><![CDATA[ Spacious 2BR Apartment for Rent in Business Bay ]]></Property_Title>
+    <Property_Description><![CDATA[
+      Modern apartment close to metro with canal view and premium amenities.
+    ]]></Property_Description>
 
-    <Images>https://example.com/images/office1.jpg</Images>
+    <Furnished><![CDATA[ No ]]></Furnished>
+    <Off_plan><![CDATA[ No ]]></Off_plan>
 
-    <Publishing_Draft>No</Publishing_Draft>
-    <Location>Dubai</Location>
+    <Features>
+      <Feature><![CDATA[ Swimming Pool ]]></Feature>
+      <Feature><![CDATA[ Gym ]]></Feature>
+      <Feature><![CDATA[ Covered Parking ]]></Feature>
+    </Features>
 
-    <Modified_By>System</Modified_By>
-    <Connected_to>CRM</Connected_to>
-    <Layout>2</Layout>
+    <Images>
+      <Image><![CDATA[ https://example.com/images/apartment1.jpg ]]></Image>
+      <Image><![CDATA[ https://example.com/images/apartment2.jpg ]]></Image>
+    </Images>
+
+    <Listing_Agent><![CDATA[ Sarah Williams ]]></Listing_Agent>
+    <Listing_Agent_Phone><![CDATA[ +971500000000 ]]></Listing_Agent_Phone>
+    <Listing_Agent_Email><![CDATA[ sarah@example.com ]]></Listing_Agent_Email>
+
+    <Last_Updated><![CDATA[ 2025-12-31 12:00:00 ]]></Last_Updated>
+
+    <Portals>
+      <Portal><![CDATA[ Bayut ]]></Portal>
+    </Portals>
+
   </Property>
 
 </Properties>
