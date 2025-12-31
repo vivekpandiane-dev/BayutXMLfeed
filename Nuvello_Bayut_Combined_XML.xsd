@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Properties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Property" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Properties_Name" type="xs:string" minOccurs="0"/>
+              <xs:element name="Properties_Owner" type="xs:string" minOccurs="0"/>
+              <xs:element name="Matched_Opportunities" type="xs:string" minOccurs="0"/>
+              <xs:element name="Created_By" type="xs:string" minOccurs="0"/>
+              <xs:element name="Commercial" type="CommercialType" minOccurs="0"/>
+              <xs:element name="Residential" type="xs:string" minOccurs="0"/>
+              <xs:element name="Title" type="xs:string" minOccurs="0"/>
+              <xs:element name="Property_Type" type="Property_TypeType" minOccurs="0"/>
+              <xs:element name="Sizesqft" type="xs:decimal" minOccurs="0"/>
+              <xs:element name="Bedrooms" type="xs:integer" minOccurs="0"/>
+        <xs:element name="Bathrooms" type="xs:string" minOccurs="0"/>
+              <xs:element name="Parking_Spaces" type="xs:string" minOccurs="0"/>
+              <xs:element name="Furnishing_Type" type="Furnishing_TypeType" minOccurs="0"/>
+              <xs:element name="Total_Plot_Size_Built_Up_Area" type="xs:decimal" minOccurs="0"/>
+              <xs:element name="Description" type="xs:string" minOccurs="0"/>
+              <xs:element name="Select_Amenities" type="xs:string" minOccurs="0"/>
+              <xs:element name="Assigned_User_Agent" type="xs:string" minOccurs="0"/>
+              <xs:element name="Project_StatusApplicable_Only_Sales" type="Project_StatusApplicable_Only_SalesType" minOccurs="0"/>
+              <xs:element name="Status" type="StatusType" minOccurs="0"/>
+              <xs:element name="Pricing" type="xs:decimal" minOccurs="0"/>
+              <xs:element name="Occupancy_Situation" type="Occupancy_SituationType" minOccurs="0"/>
+              <xs:element name="Rera_Permit" type="xs:string" minOccurs="0"/>
+              <xs:element name="Media_Picture" type="xs:Image" minOccurs="0"/>
+              <xs:element name="Publishing_Draft" type="xs:string" minOccurs="0"/>
+              <xs:element name="Location" type="LocationType" minOccurs="0"/>
+              <xs:element name="Modified_By" type="xs:string" minOccurs="0"/>
+              <xs:element name="Connected_to" type="xs:string" minOccurs="0"/>
+              <xs:element name="Layout" type="xs:integer" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="CommercialType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Rent"/>
+      <xs:enumeration value="Sale"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="Property_TypeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Bulk Units"/>
+      <xs:enumeration value="Full Floor"/>
+      <xs:enumeration value="Half Floor"/>
+      <xs:enumeration value="Labor Camp"/>
+      <xs:enumeration value="Office Space"/>
+      <xs:enumeration value="Plot"/>
+      <xs:enumeration value="Retail"/>
+      <xs:enumeration value="Shop"/>
+      <xs:enumeration value="Showroom"/>
+      <xs:enumeration value="Staff Accommodation"/>
+      <xs:enumeration value="Villa"/>
+      <xs:enumeration value="Warehouse"/>
+      <xs:enumeration value="Whole Building"/>
+      <xs:enumeration value="Farm"/>
+      <xs:enumeration value="Factory"/>
+      <xs:enumeration value="Business Centr"/>
+      <xs:enumeration value="Co-Working Space"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="Furnishing_TypeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Shell and Core"/>
+      <xs:enumeration value="Semi-Fitted"/>
+      <xs:enumeration value="Fitted"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="Project_StatusApplicable_Only_SalesType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Ready Secondary"/>
+      <xs:enumeration value="Off Plan Secondary"/>
+      <xs:enumeration value="Ready Primary"/>
+      <xs:enumeration value="Off Plan Primary"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StatusType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="New"/>
+      <xs:enumeration value="Available for Sale"/>
+      <xs:enumeration value="Available for Rent"/>
+      <xs:enumeration value="Available for Both"/>
+      <xs:enumeration value="Sold"/>
+      <xs:enumeration value="Rented"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="Occupancy_SituationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Vacant"/>
+      <xs:enumeration value="Tenanted"/>
+      <xs:enumeration value="Both"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="LocationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Dubai"/>
+      <xs:enumeration value="Abu-Dhabi"/>
+      <xs:enumeration value="Sharjah"/>
+      <xs:enumeration value="Oman"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
